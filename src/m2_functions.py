@@ -37,6 +37,8 @@ def main():
     turtle3()
     turtle2()
     turtle2()
+    turtle4()
+
 
     window.close_on_mouse_click()
 
@@ -102,10 +104,23 @@ def turtle3():
     maja.draw_circle(50)
     maja.end_fill()
 
+def turtle4():
+
+    tim = rg.SimpleTurtle('square')
+    tim.pen = rg.Pen('red', 4)
+    tim.paint_bucket = rg.PaintBucket('green')
+
+    tim.forward(250)
+
+    tim.begin_fill()
+    tim.draw_circle(200)
+    tim.end_fill()
+
+
 
 ########################################################################
 #
-# TODO: 2.
+# Done: 2.
 #   READ the code above.  Be sure you understand:
 #     -- How many functions are defined above?
 #           (Answer: 4)
@@ -137,7 +152,7 @@ def turtle3():
 
 ########################################################################
 #
-# TODO: 3.
+# Done: 3.
 #   Define another function,
 #   immediately below the end of the definition of   turtle3   above.
 #   Name your new function   turtle4.
